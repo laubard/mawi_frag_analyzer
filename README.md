@@ -34,7 +34,7 @@ At the root of the project:
 ## Build mawi-frag-analyzer-rs (frag log analyzer)
 
 At the root of the project:
-    $ cd tools/mawi-frag-analyzer-rs
+    $ cd tools/mawi_frag_analyzer_rs
     $ cargo build
 
 ## Python (analysis scripts)
@@ -58,8 +58,8 @@ To execute the provided commands, you need to set the following environment vari
 - PCAP_ANALYZER_PATH: the root of the pcap-analyzer tool (which should be located in ./tools/pcap-analyzer)
 - MAWI_DATA_PATH: the directory where PCAP compressed files are stored
 - OUTPUT_DATA_PATH: a directory with enough space to temporarily store decompressed PCAP files
-- run_dir_pcap_analyzer: where the output file related to pcap-analyzer are stored. It should be set after command 01.A.   
-- run_dir_capinfos: where the output file related to capinfos are stored. It should be set after command 02.A.   
+- run_dir_pcap_analyzer: where the output files related to pcap-analyzer are stored. It should be set after command 01.A.   
+- run_dir_capinfos: where the output files related to capinfos are stored. It should be set after command 02.A.   
 
 # License
 
