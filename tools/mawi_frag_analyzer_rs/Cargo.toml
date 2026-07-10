@@ -1,0 +1,43 @@
+[package]
+name = "mawi-frag-analyzer"
+version = "0.1.0"
+authors = [ "Lucas Aubard <lucas.aubard@irisa.fr>" ]
+edition = "2024"
+
+
+[[bin]]
+name = "fill_extension_flow_stat"
+path = "src/bin/fill_extension_flow_stat.rs"
+
+[[bin]]
+name = "generate_generic_frag_stats"
+path = "src/bin/generate_generic_frag_stats.rs"
+
+[[bin]]
+name = "generate_generic_frag_stats_from_serie_kind"
+path = "src/bin/generate_generic_frag_stats_from_serie_kind.rs"
+
+[[bin]]
+name = "merge_flows_within_time_window"
+path = "src/bin/merge_flows_within_time_window.rs"
+
+[[bin]]
+name = "filter_three_tuple_frag_stats"
+path = "src/bin/filter_three_tuple_frag_stats.rs"
+
+[[bin]]
+name = "filter_three_tuple_frag_stats_with_ts_in_start_end"
+path = "src/bin/filter_three_tuple_frag_stats_with_ts_in_start_end.rs"
+
+[lib]
+name = "rst_lib"
+path = "src/lib/lib.rs"
+
+[dependencies]
+libpcap-analyzer = { path = "../pcap-analyzer/libpcap-analyzer" }
+libpcap-tools = { path="../pcap-analyzer/libpcap-tools" }
+clap = "4.4.6"
+log = "0.4.20"
+env_logger = "0.10.0"
+serde = { version = "1.0.189", features = ["derive"] }
+serde_json = "1.0.107"
